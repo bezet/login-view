@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ekran logowania</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    
+    <div class="login-unit">
+
+      <div class="login-unit__heading headings">
+        <p class="headings__subtitle">Witaj w</p>
+        <h1 class="headings__title">Ekranie logowania</h1>
+      </div>
+
+      <div class="login-unit__box">
+        <form id="login_form" class="form">
+
+          <div class="form__input-wrapper">
+            <label for="form_login" class="form__label">login</label>
+            <input id="form_login" class="form__input" type="text">
+          </div>
+
+          <div class="form__input-wrapper">              
+            <label for="form_password" class="form__label">hasło</label>
+            <input id="form_password" class="form__input" type="password">
+          </div>
+
+          <button class="form__btn button" type="submit">Zaloguj się</button>
+          
+          <p class="form__info"></p>
+        </form>
+      </div>
+
+      <p class="login-unit__reminder">Zapomniałeś hasła? <a href="/">Kliknij tutaj</a></p>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

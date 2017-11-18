@@ -1,0 +1,42 @@
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin placeholder {
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}
+
+@mixin absolute-all($margin: 0) {
+  position: absolute;
+  top: $margin;
+  bottom: $margin;
+  right: $margin;
+  left: $margin;
+}
+
+@mixin no-highlight {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+@mixin highlight-color($color) {
+  ::selection {
+    background: $color;
+    color: invert($color);
+  }
+  ::-moz-selection {
+    background: $color;
+    color: invert($color);
+  }
+}

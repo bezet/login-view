@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@include highlight-color(#562222);
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  min-height: 360px;
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  color: #333;
+  background: url('../images/Barren-Landscape-Silhouette-2400px.png') no-repeat center / cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 300ms ease;
+
+  &:hover {
+    opacity: .75;
+  }
+}

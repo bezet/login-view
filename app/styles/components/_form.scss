@@ -1,0 +1,60 @@
+.form {
+  position: relative;
+}
+
+.form__input-wrapper {
+  position: relative;
+  padding: 0 0 20px;
+  margin: 0;
+}
+
+.form__label {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.6em;
+  line-height: 1;
+  color: rgba(0,0,0, .5);
+  transition: all 300ms ease;
+}
+
+.form__label.js-moved,
+.no-js .form__label {
+  bottom: 5px;
+  font-size: 1.2em;
+}  
+
+.form__input {
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 1.6em;
+  // background: rgba(0,0,0, .65);
+  // color: #fff;
+  background: transparent;
+  border-bottom: 1px solid #000;
+
+  @include placeholder {
+    // color: #fff;
+  }
+}  
+
+.form__btn {
+  display: block;
+  width: 100%;
+  margin: 20px 0 0;
+  font-size: 1.6em;  
+}  
+
+.form__info {
+  position: absolute;
+  width: 100%;
+  padding: 14px 0;
+  margin: 0;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1;
+  color: #b71414;
+}

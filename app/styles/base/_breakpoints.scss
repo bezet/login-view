@@ -1,0 +1,32 @@
+$_breakpoints: (
+  "xs-mobile":  320px,
+  "s-mobile":   450px,
+  "m-mobile":   600px,
+  "l-mobile":   768px,
+  "xs-screen":  1024px,
+  "s-screen":   1180px,
+  "m-screen":   1280px,
+  "sl-screen":  1366px,
+  "l-screen":   1440px,
+  "xl-screen":  1680px,
+  "xxl-screen": 1920px
+);
+  
+@mixin bp($breakpoint) {
+  @if map-get($_breakpoints, $breakpoint) != null {
+    // @media only screen and (min-width: map-get($_breakpoints, $breakpoint) + 1) { 
+    @media only screen and (max-width: map-get($_breakpoints, $breakpoint)) { 
+      @content; 
+    }
+  }
+  @else {
+    // @media only screen and (min-width: $breakpoint) { 
+    @media only screen and (max-width: $breakpoint) { 
+      @content; 
+    }
+  }
+}
+
+@mixin print() {
+  @media print { @content; }
+}
